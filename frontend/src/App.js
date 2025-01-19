@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import Navbar from './pages/Navbar'
 
@@ -8,7 +8,7 @@ function App() {
   
     <div className="App">
       <Navbar />
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Hello Team Edit TEST <code>src/App.js</code> and save
@@ -22,7 +22,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
