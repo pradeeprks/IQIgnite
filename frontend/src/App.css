@@ -24,9 +24,9 @@
   color: white;
 }
 
-.App-link {
+/* .App-link {
   color: #61dafb;
-}
+} */
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+.AppBar {
+  background-color: #2874f0;
+}
+
+.search-bar {
+  width: 60%;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  padding: 4px 10px;
+}
+
+.category-button:hover {
+  background-color: #f1f1f1;
+}
+
+.login-button {
+  color: #2874f0;
+  font-weight: bold;
+  background-color: white;
+  text-transform: none;
+}
+
