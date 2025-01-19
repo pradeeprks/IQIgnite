@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/App.css";
-import Logo from '../images/logo.png';
+import Logo from "../images/logo.png";
 const AuthPage = () => {
   const [isSignIn, setIsSignIn] = useState(true); // Toggle between Sign In and Sign Up
 
@@ -18,11 +18,7 @@ const AuthPage = () => {
       <div className="form-container">
         <div className="form-card">
           {/* Logo */}
-          <img
-              src={Logo}
-              alt="Logo"
-            className="form-logo"
-          />
+          <img src={Logo} alt="Logo" className="form-logo" />
 
           {/* Heading */}
           <h1>{isSignIn ? "Welcome Back!" : "Create Your Account"}</h1>
@@ -99,8 +95,7 @@ const AuthPage = () => {
             {!isSignIn && (
               <div className="options">
                 <label className="checkbox">
-                  <input type="checkbox" required />
-                  I agree to the{" "}
+                  <input type="checkbox" required />I agree to the{" "}
                   <a href="/terms">Terms & Conditions</a> and{" "}
                   <a href="/privacy">Privacy Policy</a>.
                 </label>
@@ -113,66 +108,60 @@ const AuthPage = () => {
             </button>
           </form>
 
-<div className="social-login">
-  {/* Social Login */}
-<div className="social-login">
-  <p>Or {isSignIn ? "sign in" : "sign up"} with:</p>
-  <div className="social-buttons">
-    {/* Google */}
-    <button className="social-btn outlined google">
-      <img
-        src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png"
-        alt="Google"
-        className="social-logo"
-      />
-    </button>
+          <div className="social-login">
+            {/* Social Login */}
+            <div className="social-login">
+              <p>Or {isSignIn ? "sign in" : "sign up"} with:</p>
+              <div className="social-buttons">
+                {/* Google */}
+                <button className="social-btn outlined google">
+                  <img
+                    src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png"
+                    alt="Google"
+                    className="social-logo"
+                  />
+                </button>
 
-    {/* Twitter */}
-    <button className="social-btn outlined twitter">
-      <img
-        src="https://ouch-cdn2.icons8.com/KO5GXNW70CGm4W3hsUirIkCdPU0UF6ZMXZz4EUGJcek/rs:fit:456:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNjk1/LzQxYjNlOTJmLTk1/OGYtNGE0OC1hNDlj/LTlhNTQwNmM1ZWI4/MC5wbmc.png"
-        alt="Twitter"
-        className="social-logo"
-      />
-    
-    </button>
+                {/* Twitter */}
+                <button className="social-btn outlined twitter">
+                  <img
+                    src="https://ouch-cdn2.icons8.com/KO5GXNW70CGm4W3hsUirIkCdPU0UF6ZMXZz4EUGJcek/rs:fit:456:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNjk1/LzQxYjNlOTJmLTk1/OGYtNGE0OC1hNDlj/LTlhNTQwNmM1ZWI4/MC5wbmc.png"
+                    alt="Twitter"
+                    className="social-logo"
+                  />
+                </button>
 
-    {/* LinkedIn */}
-    <button className="social-btn outlined linkedin">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
-        alt="LinkedIn"
-        className="social-logo"
-      />
-    
-    </button>
-    <button className="social-btn outlined facebook">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/800px-Facebook_f_logo_%282019%29.svg.png"
-        alt="LinkedIn"
-        className="social-logo"
-      />
-   
-    </button>
+                {/* LinkedIn */}
+                <button className="social-btn outlined linkedin">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                    alt="LinkedIn"
+                    className="social-logo"
+                  />
+                </button>
+                <button className="social-btn outlined facebook">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/800px-Facebook_f_logo_%282019%29.svg.png"
+                    alt="LinkedIn"
+                    className="social-logo"
+                  />
+                </button>
 
-    {/* Microsoft */}
-    <button className="social-btn outlined microsoft">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
-        alt="Microsoft"
-        className="social-logo"
-      />
-    </button>
-  </div>
-</div>
-
-</div>
+                {/* Microsoft */}
+                <button className="social-btn outlined microsoft">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+                    alt="Microsoft"
+                    className="social-logo"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
 
           {/* Switch Between Sign In and Sign Up */}
           <p className="switch-auth">
-            {isSignIn
-              ? "Don’t have an account?"
-              : "Already have an account?"}{" "}
+            {isSignIn ? "Don’t have an account?" : "Already have an account?"}{" "}
             <span onClick={toggleAuthMode} className="auth-link">
               {isSignIn ? "Sign Up" : "Sign In"}
             </span>
